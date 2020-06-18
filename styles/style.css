@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: whitesmoke;
+  background-image: url("vityaz.jpg");
+  background-attachment: fixed;
+  background-position: 40% 50%;
+  background-size: 350%;
+  transition: background-size 500ms ease-in-out;
+  background-repeat: no-repeat;
+  /* background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: whitesmoke; */
+}
+
+body.slide1 {
+  background-size: 100%;
+  transition: background-size 500ms ease-in-out;
+}
+
+body.slide2 {
+  background-size: 200%;
+  background-position: 20% 50%;
+  transition: background-size 500ms ease-in-out;
+}
+
+body.slide3 {
+  background-size: 350%;
+  background-position: 70% 40%;
+  transition: background-size 500ms ease-in-out;
+}
+
+body.slide4 {
+  background-size: 500%;
+  background-position: 87% 97%;
+  transition: background-size 500ms ease-in-out;
+}
+
+body.slide5 {
+  background-size: 100%;
+  background-position: 50% 50%;
+  transition: background-size 500ms ease-in-out;
+}
+
+body img {
+  background-attachment: fixed;
+  object-fit: cover;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 100px;
+}
+
+/*Title Screen*/
+.title-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 40vh 5vh;
+}
+
+.title-card h2 {
+  padding: 20px;
+}
+
+/* End Screen */
+.end-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 100px 50px;
+}
+
+.end-card h2 {
+  padding: 20px;
+}
+
+/* Float four columns side by side */
+.column {
+  width: 100%;
+  margin-bottom: 10vh;
+  /* position: absolute;
+  bottom: 10px;
+  margin-bottom: 20px; */
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 20px 20px;
+  position: sticky;
+  bottom: 10px;
+  
+}
+
+
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 40px;
+  text-align: center;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: 2s;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.fade-in.appear {
+  opacity: 0;
+}
+
+
