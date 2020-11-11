@@ -8,7 +8,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
   color: whitesmoke;
-  background-image: url("vityaz.jpg");
+  background-image: url("picture.jpg");
   background-attachment: fixed;
   background-position: 40% 50%;
   background-size: 350%;
@@ -124,4 +124,6 @@ section {
   opacity: 0;
 }
 
-
+a {
+  color: white;
+}
